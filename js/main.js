@@ -1,8 +1,8 @@
 async function readTextFile(file) {
   const response = await fetch(file);
   const text = await response.text();
-  res = text.replaceAll("\n", "<br>");
-  return res;
+  // res = text.replaceAll("\n", "<br>");
+  return text;
 }
 
 
@@ -15,9 +15,9 @@ const translations = [
 ];
 
 const files = {
-  "EN": "res/en.txt",
-  "UA": "res/ua.txt",
-  "RU": "res/ru.txt",
+  "EN": "res/en.html",
+  "UA": "res/ua.html",
+  "RU": "res/ru.html",
 };
 
 let currentTranslationIndex = -1;
